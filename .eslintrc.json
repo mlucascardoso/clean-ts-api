@@ -2,5 +2,16 @@
     "extends": "standard-with-typescript",
     "parserOptions": {
       "project": "./tsconfig.json"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/consistent-type-definitions": "off"
     }
 }
