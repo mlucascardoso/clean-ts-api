@@ -1,9 +1,3 @@
-import { InvalidParamError } from './invalid-param-error'
-import { MissingParamError } from './missing-param-error'
-import { ServerError } from './server-error'
-
-export {
-    InvalidParamError,
-    MissingParamError,
-    ServerError
-}
+export * from './invalid-param-error'
+export * from './missing-param-error'
+export * from './server-error'
