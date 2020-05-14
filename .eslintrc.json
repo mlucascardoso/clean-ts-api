@@ -4,6 +4,9 @@
       "project": "./tsconfig.json"
     },
     "rules": {
+        "space-before-function-paren": [
+            "error", "never"
+        ],
         "@typescript-eslint/indent": [
             "error",
             4,
