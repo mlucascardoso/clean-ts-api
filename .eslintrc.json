@@ -4,7 +4,7 @@
       "project": "./tsconfig.json"
     },
     "rules": {
-        "indent": [
+        "@typescript-eslint/indent": [
             "error",
             4,
             {
