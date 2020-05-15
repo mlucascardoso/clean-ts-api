@@ -5,7 +5,11 @@
     },
     "rules": {
         "space-before-function-paren": [
-            "error", "never"
+            "error", {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
         ],
         "@typescript-eslint/indent": [
             "error",
