@@ -18,6 +18,7 @@
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.5",
+    "@types/validator": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "coveralls": "^3.1.0",
     "eslint": "^6.8.0",
@@ -34,6 +35,9 @@
     "typescript": "^3.8.3"
   },
   "engines": {
-      "node": "12.x"
+    "node": "12.x"
+  },
+  "dependencies": {
+    "validator": "^13.0.0"
   }
 }
