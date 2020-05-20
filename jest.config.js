@@ -5,6 +5,7 @@ module.exports = {
         '!<rootDir>/src/**/*-protocols.ts'
     ],
     coverageDirectory: 'coverage',
+    preset: '@shelf/jest-mongodb',
     roots: ['<rootDir>/src'],
     testEnvironment: 'node',
     transform: {
