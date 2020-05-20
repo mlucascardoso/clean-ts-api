@@ -30,4 +30,12 @@ describe('Name of the group', () => {
 
         expect(hash).toBe('hashed_value')
     })
+
+    it('should throw if bcrypt throws', async () => {
+        const sut = makeSut()
+        jest.spyOn(bcrypt, 'hash').mockReturnValueOnce(Promise.reject(new Error()))
+        const promise = sut.encrypt('any_value')
+
+        await expect(promise).rejects.toThrow()
+    })
 })
