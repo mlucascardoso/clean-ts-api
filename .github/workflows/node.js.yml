@@ -20,15 +20,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2    
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Login to cloudfoundry
-      uses: mlucascardoso/cf-cli-action@master
-      with:
-        args: login -a https://api.cf.us10.hana.ondemand.com -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
+      uses: actions/checkout@v2
     - name: Test deploy command
       uses: mlucascardoso/cf-cli-action@master
       with:
