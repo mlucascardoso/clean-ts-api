@@ -29,3 +29,7 @@ jobs:
       uses: mlucascardoso/cf-cli-action@master
       with:
         args: login -a https://api.cf.us10.hana.ondemand.com -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
+    - name: Test deploy command
+        uses: mlucascardoso/cf-cli-action@master
+        with:
+          args: deploy -h
