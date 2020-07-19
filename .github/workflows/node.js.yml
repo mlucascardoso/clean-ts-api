@@ -24,4 +24,4 @@ jobs:
     - name: Test deploy command
       uses: mlucascardoso/cf-cli-action@master
       with:
-        args: help -a
+        args: help -a 
