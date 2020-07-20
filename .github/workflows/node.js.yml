@@ -25,4 +25,4 @@ jobs:
       uses: mlucascardoso/cf-cli-action@development
       with:
         use_multi_apps_plugin: true
-        command: deploy -a  
+        command: deploy -a 
