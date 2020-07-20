@@ -24,5 +24,5 @@ jobs:
     - name: Test deploy command
       uses: mlucascardoso/cf-cli-action@development
       with:
-        use_multi_apps_plugin: false
+        use_multi_apps_plugin: true
         command: deploy -a  
