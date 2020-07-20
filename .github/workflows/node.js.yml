@@ -27,7 +27,7 @@ jobs:
         use_multi_apps_plugin: false
         command: login -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
     - name: Test deploy command
-        uses: mlucascardoso/cf-cli-action@development
-        with:
-          use_multi_apps_plugin: true
-          command: deploy -a
+      uses: mlucascardoso/cf-cli-action@development
+      with:
+        use_multi_apps_plugin: true
+        command: deploy -a
